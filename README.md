@@ -11,7 +11,7 @@ This project is part of a three-part data pipeline I built from scratch:
 
 | # | Project | What It Does | Repo |
 |---|---------|-------------|------|
-| 1 | **Data Warehouse** | Built the data infrastructure — ETL pipelines, Bronze/Silver/Gold layers, Star Schema | [data-warehouse-mysql](https://github.com/Mohd-Shabir/data-warehouse-mysql) |
+| 1 | **Data Warehouse** | Built the data infrastructure — ETL pipelines, Bronze/Silver/Gold layers, Star Schema | (https://github.com/Mohd-Shabir/data-warehouse-sql-project-) |
 | 2 | **Data Analytics** | Analysed the Gold layer data using EDA and Advanced SQL *(this repo)* | — |
 | 3 | **Power BI Dashboard** | Built an interactive sales dashboard on top of the analytics *(coming soon)* | — |
 
@@ -70,4 +70,14 @@ sql-data-analytics/
 | 5 | Magnitude Analysis | Revenue and quantity grouped by category, country, gender |
 | 6 | Ranking Analysis | Top/bottom products and customers using `RANK()` and `PARTITION BY` |
 
+## 📊 Advanced Data Analytics (ADA)
 
+| # | Script | What It Answers |
+|---|--------|----------------|
+| 7 | Change-Over-Time | Monthly and quarterly sales trends, seasonality |
+| 8 | Cumulative Analysis | Running total sales and 3-month moving average |
+| 9 | Performance Analysis | Year-over-Year and Month-over-Month growth using `LAG()` |
+| 10 | Part-to-Whole | Revenue contribution % by category and country |
+| 11 | Data Segmentation | Customer loyalty, churn risk, and product cost segments |
+| 12 | Report: Customers | Final customer view — age group, VIP/Regular/New, AOV |
+| 13 | Report: Products | Final product view — performance segment, AOR, lifespan |
