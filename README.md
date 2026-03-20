@@ -11,7 +11,7 @@ This project is part of a three-part data pipeline I built from scratch:
 
 | # | Project | What It Does | Repo |
 |---|---------|-------------|------|
-| 1 | **Data Warehouse** | Built the data infrastructure — ETL pipelines, Bronze/Silver/Gold layers, Star Schema | (https://github.com/Mohd-Shabir/data-warehouse-sql-project-) |
+| 1 | **Data Warehouse** | Built the data infrastructure — ETL pipelines, Bronze/Silver/Gold layers, Star Schema | https://github.com/Mohd-Shabir/data-warehouse-sql-project- |
 | 2 | **Data Analytics** | Analysed the Gold layer data using EDA and Advanced SQL *(this repo)* | — |
 | 3 | **Power BI Dashboard** | Built an interactive sales dashboard on top of the analytics *(coming soon)* | — |
 
@@ -38,6 +38,8 @@ real business questions. The final output is two reusable reporting views ready 
 ```
 sql-data-analytics/
 │
+├── docs/
+│   └── analytics_roadmap.png
 ├── scripts/
 │   ├── 01_EDA_database_exploration.sql
 │   ├── 02_EDA_dimensions_exploration.sql
@@ -53,8 +55,8 @@ sql-data-analytics/
 │   ├── 12_report_customers.sql
 │   └── 13_report_products.sql
 │
-├── docs/
-│   └── analytics_roadmap.png
+├── LICENSE
+│   
 │
 └── README.md
 ```
@@ -81,3 +83,29 @@ sql-data-analytics/
 | 11 | Data Segmentation | Customer loyalty, churn risk, and product cost segments |
 | 12 | Report: Customers | Final customer view — age group, VIP/Regular/New, AOV |
 | 13 | Report: Products | Final product view — performance segment, AOR, lifespan |
+
+
+---
+
+## 📊 Advanced Data Analytics (ADA)
+
+| # | Script | What It Answers |
+|---|--------|----------------|
+| 7 | Change-Over-Time | Monthly and quarterly sales trends, seasonality |
+| 8 | Cumulative Analysis | Running total sales and 3-month moving average |
+| 9 | Performance Analysis | Year-over-Year and Month-over-Month growth using `LAG()` |
+| 10 | Part-to-Whole | Revenue contribution % by category and country |
+| 11 | Data Segmentation | Customer loyalty, churn risk, and product cost segments |
+| 12 | Report: Customers | Final customer view — age group, VIP/Regular/New, AOV |
+| 13 | Report: Products | Final product view — performance segment, AOR, lifespan |
+
+
+## 📋 Business Reports
+
+Two reusable `VIEW` objects created in the Gold layer, ready to connect to any BI tool:
+
+- **`gold.report_customers`** — Customer segments, churn risk, recency, average order value
+- **`gold.report_products`** — Product segments, cost range, average monthly revenue, lifespan
+
+---
+
