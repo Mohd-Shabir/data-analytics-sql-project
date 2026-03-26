@@ -1,7 +1,7 @@
 # SQL Data Analytics Project
 
 > A data analytics project built on top of a real data warehouse, using pure SQL to explore data,
-> find patterns, and answer business questions about customers, products, and sales.
+> find patterns, and answer business questions about customers, products, sales,
 > and visualize insights through an interactive Power BI dashboard.
 
 ---
