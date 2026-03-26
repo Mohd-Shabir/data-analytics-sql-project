@@ -13,7 +13,7 @@ This project is part of a three-part data pipeline I built from scratch:
 |---|---------|-------------|------|
 | 1 | **Data Warehouse** | Built the data infrastructure — ETL pipelines, Bronze/Silver/Gold layers, Star Schema | https://github.com/Mohd-Shabir/data-warehouse-sql-project- |
 | 2 | **Data Analytics** | Analysed the Gold layer data using EDA and Advanced SQL *(this repo)* | — |
-| 3 | **Power BI Dashboard** | Built an interactive sales dashboard on top of the analytics *(coming soon)* | — |
+| 3 | **Power BI Dashboard** | Built an interactive sales dashboard on top of the analytics *(this repo)* | — |
 
 ## 📖 Overview
 
@@ -40,6 +40,14 @@ sql-data-analytics/
 │
 ├── docs/
 │   └── analytics_roadmap.png
+│
+├── powerbi_dashboard/
+│   ├── powerbi_dashboard.pbix
+│   ├── powerbi_dashboard.pdf
+│   ├── powerbi_dashboard1.png
+│   ├── powerbi_dashboard2.png
+│   └── powerbi_dashboard3.png
+│
 ├── scripts/
 │   ├── 01_EDA_database_exploration.sql
 │   ├── 02_EDA_dimensions_exploration.sql
@@ -56,7 +64,6 @@ sql-data-analytics/
 │   └── 13_report_products.sql
 │
 ├── LICENSE
-│   
 │
 └── README.md
 ```
@@ -108,4 +115,93 @@ Two reusable `VIEW` objects created in the Gold layer, ready to connect to any B
 - **`gold.report_products`** — Product segments, cost range, average monthly revenue, lifespan
 
 ---
+## 📊 Power BI Dashboard
 
+Built an interactive 3-page sales dashboard on top of the Gold layer reporting views.
+
+### 🔗 Pages
+
+| Page | What It Shows |
+
+|------|--------------|
+
+| Executive Summary | KPI cards, revenue trend, category breakdown, AOV by age group |
+
+| Customer Intelligence | Customer segments, age distribution, top 10 customers, avg monthly spend |
+
+| Product Performance | Product segments, revenue by subcategory, top 10 products, avg monthly revenue |
+
+### 🎨 Design
+
+| Element | Value |
+
+|---------|-------|
+
+| Background | `#F7F6F2` warm white |
+
+| Primary accent | `#C9A227` gold |
+
+| Secondary | `#2A9D8F` teal |
+
+| Header | `#1A1A2E` dark navy |
+
+### 📁 Files
+
+| File | Description |
+
+|------|-------------|
+
+| `powerbi_dashboard.pbix` | Power BI source file |
+
+| `powerbi_dashboard.pdf` | Exported PDF of all 3 pages |
+
+| `powerbi_dashboard1.png` | Executive Summary screenshot |
+
+| `powerbi_dashboard2.png` | Customer Intelligence screenshot |
+
+| `powerbi_dashboard3.png` | Product Performance screenshot |
+
+### 🛠️ Tools
+
+| Tool | Purpose |
+
+|------|---------|
+
+| Power BI | Dashboard building |
+
+| DAX | KPI measures |
+
+| CSV | Data source from Gold layer views |
+
+---
+
+## 📐 DAX Measures
+
+```dax
+Total Sales    = SUM(report_customers[total_sales])
+Total Customers = DISTINCTCOUNT(report_customers[customer_key])
+Total Orders   = SUM(report_customers[total_orders])
+Total Products  = DISTINCTCOUNT(report_products[product_key])
+```
+---
+## 📸 Screenshots
+
+
+| Executive Summary | Customer Intelligence | Product Performance |
+|---|---|---|
+| !![Executive Summary](powerbi_dashboard/powerbi_dashboard1.png)
+![Customer Intelligence](powerbi_dashboard/powerbi_dashboard2.png)
+![Product Performance](powerbi_dashboard/powerbi_dashboard3.png)|
+
+---
+
+## 💡 Key Insights
+
+- 💰 **Total Revenue: $29.4M** across all time
+- 🚴 **Bikes drive ~97% of revenue** — Road Bikes alone account for $14.52M
+- 👥 **80% of customers are New segment** — significant upsell opportunity for Regular/VIP conversion
+- 🏆 **Top customer: Willie Xu** — $13,489 in revenue across 6 orders
+- 👴 **50+ age group dominates** — 12,400 customers, the largest demographic
+- 📦 **130 active SKUs** — with 50.77% classified as High-Performers
+
+---
