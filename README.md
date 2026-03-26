@@ -2,6 +2,7 @@
 
 > A data analytics project built on top of a real data warehouse, using pure SQL to explore data,
 > find patterns, and answer business questions about customers, products, and sales.
+> and visualize insights through an interactive Power BI dashboard.
 
 ---
 
@@ -32,7 +33,7 @@ real business questions. The final output is two reusable reporting views ready 
 | MySQL | Database engine |
 | DBeaver | SQL client |
 | Git / GitHub | Version control |
-| Power BI | Dashboard *(coming soon)* |
+| Power BI | Dashboard |
 
 
 ```
@@ -115,6 +116,7 @@ Two reusable `VIEW` objects created in the Gold layer, ready to connect to any B
 - **`gold.report_products`** — Product segments, cost range, average monthly revenue, lifespan
 
 ---
+
 ## 📊 Power BI Dashboard
 
 Built an interactive 3-page sales dashboard on top of the Gold layer reporting views.
@@ -122,76 +124,52 @@ Built an interactive 3-page sales dashboard on top of the Gold layer reporting v
 ### 🔗 Pages
 
 | Page | What It Shows |
-
 |------|--------------|
-
 | Executive Summary | KPI cards, revenue trend, category breakdown, AOV by age group |
-
 | Customer Intelligence | Customer segments, age distribution, top 10 customers, avg monthly spend |
-
 | Product Performance | Product segments, revenue by subcategory, top 10 products, avg monthly revenue |
 
 ### 🎨 Design
 
 | Element | Value |
-
 |---------|-------|
-
 | Background | `#F7F6F2` warm white |
-
 | Primary accent | `#C9A227` gold |
-
 | Secondary | `#2A9D8F` teal |
-
 | Header | `#1A1A2E` dark navy |
 
 ### 📁 Files
 
 | File | Description |
-
 |------|-------------|
-
 | `powerbi_dashboard.pbix` | Power BI source file |
-
 | `powerbi_dashboard.pdf` | Exported PDF of all 3 pages |
-
 | `powerbi_dashboard1.png` | Executive Summary screenshot |
-
 | `powerbi_dashboard2.png` | Customer Intelligence screenshot |
-
 | `powerbi_dashboard3.png` | Product Performance screenshot |
 
 ### 🛠️ Tools
 
 | Tool | Purpose |
-
 |------|---------|
-
 | Power BI | Dashboard building |
-
 | DAX | KPI measures |
-
 | CSV | Data source from Gold layer views |
 
----
-
-## 📐 DAX Measures
-
+### 📐 DAX Measures
 ```dax
-Total Sales    = SUM(report_customers[total_sales])
+Total Sales     = SUM(report_customers[total_sales])
 Total Customers = DISTINCTCOUNT(report_customers[customer_key])
-Total Orders   = SUM(report_customers[total_orders])
+Total Orders    = SUM(report_customers[total_orders])
 Total Products  = DISTINCTCOUNT(report_products[product_key])
 ```
+
 ---
 ## 📸 Screenshots
 
-
 | Executive Summary | Customer Intelligence | Product Performance |
 |---|---|---|
-| !![Executive Summary](powerbi_dashboard/powerbi_dashboard1.png)
-![Customer Intelligence](powerbi_dashboard/powerbi_dashboard2.png)
-![Product Performance](powerbi_dashboard/powerbi_dashboard3.png)|
+| ![Executive Summary](powerbi_dashboard/powerbi_dashboard1.png) | ![Customer Intelligence](powerbi_dashboard/powerbi_dashboard2.png) | ![Product Performance](powerbi_dashboard/powerbi_dashboard3.png) |
 
 ---
 
