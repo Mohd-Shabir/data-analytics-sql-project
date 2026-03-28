@@ -16,11 +16,27 @@ This project is part of a three-part data pipeline I built from scratch:
 | 2 | **Data Analytics** | Analysed the Gold layer data using EDA and Advanced SQL *(this repo)* | — |
 | 3 | **Power BI Dashboard** | Built an interactive sales dashboard on top of the analytics *(this repo)* | — |
 
-## 📖 Overview
+---
 
-Using the Gold layer produced by the Data Warehouse project, this project explores the data
-through Exploratory Data Analysis (EDA) and then applies advanced SQL techniques to answer
-real business questions. The final output is two reusable reporting views ready for dashboards.
+## 📖 Executive Summary
+
+This project is the second and third part of a three-part end-to-end data pipeline. Starting from the Gold layer produced by the Data Warehouse project, I first conducted **Exploratory Data Analysis (EDA)** across 6 scripts to understand the data — exploring dimensions, date ranges, KPIs, and rankings. I then applied **Advanced Data Analytics (ADA)** across 7 scripts to answer deeper business questions — analysing trends over time, cumulative growth, year-over-year performance, and customer/product segmentation. The final output was two reusable SQL views (`report_customers` and `report_products`) which I then connected directly to **Power BI** to build an interactive 3-page executive dashboard — segmenting the customer base, tracking high-value VIPs, and identifying top-performing product categories to help leadership optimize marketing spend and inventory.
+
+---
+
+---
+
+## 🎯 Business Problem
+
+The executive team lacked clear visibility into customer purchasing behaviors and product profitability. They needed to know:
+
+| # | Business Question |
+|---|------------------|
+| 1 | Who are our most valuable customers (VIPs), and how do their purchasing habits differ from one-time buyers? |
+| 2 | Do older demographics spend more than younger ones? |
+| 3 | Which specific product categories are driving the actual revenue vs. just taking up warehouse space? |
+
+---
 
 ## 🗺️ Analytics Roadmap
 
@@ -173,6 +189,16 @@ Total Products  = DISTINCTCOUNT(report_products[product_key])
 
 ---
 
+## 📈 Results & Recommendations
+
+| # | Business Question | Finding | Recommendation |
+|---|------------------|---------|---------------|
+| 1 | Who are our most valuable customers (VIPs), and how do their purchasing habits differ from one-time buyers? | **80% of customers** are "New" (single purchases), while the tiny VIP segment **(8.75%)** drives massive value with an Average Order Value (AOV) of **$2,600+** per order. | Implement a targeted onboarding email sequence and loyalty incentives to convert single-purchasers into Regulars/VIPs. |
+| 2 | Do older demographics spend more than younger ones? | The **50+ age group** dominates the customer base (12,400 customers) and maintains the highest AOV of **$918** (vs. $794 for the 30-39 group). | Tailor ad copy and imagery to resonate with an older, high-spending demographic. |
+| 3 | Which product categories drive revenue vs. take up warehouse space? | **Road Bikes** alone generate **$14.5M** while apparel/clothing items (like Jerseys and Shorts) generate less than **$0.3M** combined despite taking up catalog space. | Reallocate marketing budget toward Road Bike accessories/cross-sells, and review low-performing clothing SKUs for potential discontinuation. |
+
+---
+---
 ## 💡 Key Insights
 
 - 💰 **Total Revenue: $29.4M** across all time
