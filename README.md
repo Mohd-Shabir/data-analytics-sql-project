@@ -24,8 +24,6 @@ This project is the second and third part of a three-part end-to-end data pipeli
 
 ---
 
----
-
 ## 🎯 Business Problem
 
 The executive team lacked clear visibility into customer purchasing behaviors and product profitability. They needed to know:
@@ -42,6 +40,7 @@ The executive team lacked clear visibility into customer purchasing behaviors an
 
 ![Analytics Roadmap](docs/analytics_roadmap.png)
 
+---
 ## 🛠️ Tech Stack
 
 | Tool | Purpose |
@@ -51,6 +50,7 @@ The executive team lacked clear visibility into customer purchasing behaviors an
 | Git / GitHub | Version control |
 | Power BI | Dashboard |
 
+---
 
 ```
 sql-data-analytics/
@@ -84,6 +84,7 @@ sql-data-analytics/
 │
 └── README.md
 ```
+---
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
@@ -95,19 +96,6 @@ sql-data-analytics/
 | 4 | Measures Exploration | Core KPIs — total sales, orders, customers, average price |
 | 5 | Magnitude Analysis | Revenue and quantity grouped by category, country, gender |
 | 6 | Ranking Analysis | Top/bottom products and customers using `RANK()` and `PARTITION BY` |
-
-## 📊 Advanced Data Analytics (ADA)
-
-| # | Script | What It Answers |
-|---|--------|----------------|
-| 7 | Change-Over-Time | Monthly and quarterly sales trends, seasonality |
-| 8 | Cumulative Analysis | Running total sales and 3-month moving average |
-| 9 | Performance Analysis | Year-over-Year and Month-over-Month growth using `LAG()` |
-| 10 | Part-to-Whole | Revenue contribution % by category and country |
-| 11 | Data Segmentation | Customer loyalty, churn risk, and product cost segments |
-| 12 | Report: Customers | Final customer view — age group, VIP/Regular/New, AOV |
-| 13 | Report: Products | Final product view — performance segment, AOR, lifespan |
-
 
 ---
 
@@ -123,6 +111,21 @@ sql-data-analytics/
 | 12 | Report: Customers | Final customer view — age group, VIP/Regular/New, AOV |
 | 13 | Report: Products | Final product view — performance segment, AOR, lifespan |
 
+---
+
+## 📊 Advanced Data Analytics (ADA)
+
+| # | Script | What It Answers |
+|---|--------|----------------|
+| 7 | Change-Over-Time | Monthly and quarterly sales trends, seasonality |
+| 8 | Cumulative Analysis | Running total sales and 3-month moving average |
+| 9 | Performance Analysis | Year-over-Year and Month-over-Month growth using `LAG()` |
+| 10 | Part-to-Whole | Revenue contribution % by category and country |
+| 11 | Data Segmentation | Customer loyalty, churn risk, and product cost segments |
+| 12 | Report: Customers | Final customer view — age group, VIP/Regular/New, AOV |
+| 13 | Report: Products | Final product view — performance segment, AOR, lifespan |
+
+---
 
 ## 📋 Business Reports
 
@@ -145,6 +148,8 @@ Built an interactive 3-page sales dashboard on top of the Gold layer reporting v
 | Customer Intelligence | Customer segments, age distribution, top 10 customers, avg monthly spend |
 | Product Performance | Product segments, revenue by subcategory, top 10 products, avg monthly revenue |
 
+---
+
 ### 🎨 Design
 
 | Element | Value |
@@ -153,6 +158,8 @@ Built an interactive 3-page sales dashboard on top of the Gold layer reporting v
 | Primary accent | `#C9A227` gold |
 | Secondary | `#2A9D8F` teal |
 | Header | `#1A1A2E` dark navy |
+
+---
 
 ### 📁 Files
 
@@ -185,7 +192,7 @@ Total Products  = DISTINCTCOUNT(report_products[product_key])
 
 | Executive Summary | Customer Intelligence | Product Performance |
 |---|---|---|
-| ![Executive Summary](powerbi_dashboard/powerbi_dashboard1.png) | ![Customer Intelligence](powerbi_dashboard/powerbi_dashboard2.png) | ![Product Performance](powerbi_dashboard/powerbi_dashboard3.png) |
+| ![Executive Summary](powerbi_dashboard/powerbi_dashboard1.png) | ![Customer Intelligence](powerbi_dashboard/powerbi_dashboard2.png) | ![Product Performance](powerbi_dashboard/powerbi_dashboard3,.png) |
 
 ---
 
@@ -193,12 +200,16 @@ Total Products  = DISTINCTCOUNT(report_products[product_key])
 
 | # | Business Question | Finding | Recommendation |
 |---|------------------|---------|---------------|
-| 1 | Who are our most valuable customers (VIPs), and how do their purchasing habits differ from one-time buyers? | **80% of customers** are "New" (single purchases), while the tiny VIP segment **(8.75%)** drives massive value with an Average Order Value (AOV) of **$2,600+** per order. | Implement a targeted onboarding email sequence and loyalty incentives to convert single-purchasers into Regulars/VIPs. |
-| 2 | Do older demographics spend more than younger ones? | The **50+ age group** dominates the customer base (12,400 customers) and maintains the highest AOV of **$918** (vs. $794 for the 30-39 group). | Tailor ad copy and imagery to resonate with an older, high-spending demographic. |
-| 3 | Which product categories drive revenue vs. take up warehouse space? | **Road Bikes** alone generate **$14.5M** while apparel/clothing items (like Jerseys and Shorts) generate less than **$0.3M** combined despite taking up catalog space. | Reallocate marketing budget toward Road Bike accessories/cross-sells, and review low-performing clothing SKUs for potential discontinuation. |
+| 1 | Who are our most valuable customers (VIPs), and how do their purchasing habits differ from one-time buyers? | **80% of customers** are "New" (single purchases), while the tiny VIP segment **(8.75%)** drives massive value with an Average Order Value (AOV) of **$2,600+** per order. | Retain existing VIP customers through exclusive perks and early access offers,while implementing a loyalty program and personalized follow-up campaigns targeting 
+New customers post-purchase, with tiered incentives designed to encourage 
+repeat purchases and gradually move them toward Regular and VIP status.|
+| 2 | Do older demographics spend more than younger ones? | The **50+ age group** dominates the customer base (12,400 customers) and maintains the highest AOV of **$918** (vs. $794 for the 30-39 group). | Tailor ad copy and imagery to resonate with an older, high-spending demographic, while creating a secondary campaign targeting the 30-39 age group to diversify 
+the customer base and reduce age-concentration risk.|
+| 3 | Which product categories drive revenue vs. take up warehouse space? | **Road Bikes** alone generate **$14.5M** while apparel/clothing items (like Jerseys and Shorts) generate less than **$0.3M** combined despite taking up catalog space. | Reallocate marketing budget toward Road Bike accessories/cross-sells, and review low-performing clothing SKUs, reduce inventory levels and run promotional 
+pricing to clear stock before evaluating discontinuation on a case-by-case basis.|
 
 ---
----
+
 ## 💡 Key Insights
 
 - 💰 **Total Revenue: $29.4M** across all time
