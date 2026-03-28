@@ -200,13 +200,9 @@ Total Products  = DISTINCTCOUNT(report_products[product_key])
 
 | # | Business Question | Finding | Recommendation |
 |---|------------------|---------|---------------|
-| 1 | Who are our most valuable customers (VIPs), and how do their purchasing habits differ from one-time buyers? | **80% of customers** are "New" (single purchases), while the tiny VIP segment **(8.75%)** drives massive value with an Average Order Value (AOV) of **$2,600+** per order. | Retain existing VIP customers through exclusive perks and early access offers,while implementing a loyalty program and personalized follow-up campaigns targeting 
-New customers post-purchase, with tiered incentives designed to encourage 
-repeat purchases and gradually move them toward Regular and VIP status.|
-| 2 | Do older demographics spend more than younger ones? | The **50+ age group** dominates the customer base (12,400 customers) and maintains the highest AOV of **$918** (vs. $794 for the 30-39 group). | Tailor ad copy and imagery to resonate with an older, high-spending demographic, while creating a secondary campaign targeting the 30-39 age group to diversify 
-the customer base and reduce age-concentration risk.|
-| 3 | Which product categories drive revenue vs. take up warehouse space? | **Road Bikes** alone generate **$14.5M** while apparel/clothing items (like Jerseys and Shorts) generate less than **$0.3M** combined despite taking up catalog space. | Reallocate marketing budget toward Road Bike accessories/cross-sells, and review low-performing clothing SKUs, reduce inventory levels and run promotional 
-pricing to clear stock before evaluating discontinuation on a case-by-case basis.|
+| 1 | Who are our most valuable customers (VIPs), and how do their purchasing habits differ from one-time buyers? | **80% of customers** are "New" (single purchases), while the tiny VIP segment **(8.75%)** drives massive value with an Average Order Value (AOV) of **$2,600+** per order. | Retain existing VIP customers through exclusive perks and early access offers, while implementing a loyalty program and personalized follow-up campaigns targeting New customers post-purchase — with tiered incentives designed to gradually move them toward Regular and VIP status. |
+| 2 | Do older demographics spend more than younger ones? | The **50+ age group** dominates the customer base (12,400 customers) and maintains the highest AOV of **$918** (vs. $794 for the 30-39 group). | Tailor primary ad copy and imagery to resonate with the dominant 50+ demographic, while creating a secondary campaign targeting the 30-39 age group to diversify the customer base and reduce age-concentration risk. |
+| 3 | Which product categories drive revenue vs. take up warehouse space? | **Road Bikes** alone generate **$14.5M** while apparel/clothing items (like Jerseys and Shorts) generate less than **$0.3M** combined despite taking up catalog space. | Reallocate marketing budget toward Road Bike accessories and cross-sell campaigns. For low-performing clothing SKUs, reduce inventory levels and run promotional pricing to clear stock before evaluating discontinuation on a case-by-case basis. |
 
 ---
 
