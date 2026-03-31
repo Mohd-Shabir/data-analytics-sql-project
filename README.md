@@ -66,17 +66,17 @@ sql-data-analytics/
 │   └── powerbi_dashboard3.png
 │
 ├── scripts/
-│   ├── 01_EDA_database_exploration.sql
-│   ├── 02_EDA_dimensions_exploration.sql
-│   ├── 03_EDA_date_range_exploration.sql
-│   ├── 04_EDA_measures_exploration.sql
-│   ├── 05_EDA_magnitude_analysis.sql
-│   ├── 06_EDA_ranking_analysis.sql
-│   ├── 07_ADA_change_over_time_analysis.sql
-│   ├── 08_ADA_cumulative_analysis.sql
-│   ├── 09_ADA_performance_analysis.sql
-│   ├── 10_ADA_part_to_whole_analysis.sql
-│   ├── 11_ADA_data_segmentation.sql
+│   ├── 01_eda_database_exploration.sql
+│   ├── 02_eda_dimensions_exploration.sql
+│   ├── 03_eda_date_range_exploration.sql
+│   ├── 04_eda_measures_exploration.sql
+│   ├── 05_eda_magnitude_analysis.sql
+│   ├── 06_eda_ranking_analysis.sql
+│   ├── 07_ada_change_over_time_analysis.sql
+│   ├── 08_ada_cumulative_analysis.sql
+│   ├── 09_ada_performance_analysis.sql
+│   ├── 10_ada_part_to_whole_analysis.sql
+│   ├── 11_ada_data_segmentation.sql
 │   ├── 12_report_customers.sql
 │   └── 13_report_products.sql
 │
