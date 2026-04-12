@@ -73,11 +73,11 @@ The executive team lacked clear visibility into customer purchasing behaviors an
 sql-data-analytics/
 │
 ├── data/
-│   ├── gold_layer/                        Analytics
+│   ├── gold_layer/                       Used for Analytics
 │   │   ├── gold_dim_customers.csv
 │   │   ├── gold_dim_products.csv
 │   │   └── gold_fact_sales.csv
-│   └── report_layer/                      Power BI Dashboard
+│   └── report_layer/                     Used for Power BI Dashboard
 │       ├── gold.report_customers.csv     
 │       └── gold.report_products.csv      
 │
