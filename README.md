@@ -6,6 +6,23 @@
 
 ---
 
+## 📑 Table of Contents
+
+- [End-to-End Project Series](#-end-to-end-project-series)
+- [Executive Summary](#-executive-summary)
+- [Business Problem](#-business-problem)
+- [Analytics Roadmap](#️-analytics-roadmap)
+- [Tech Stack](#️-tech-stack)
+- [Project Structure](#-project-structure)
+- [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)
+- [Advanced Data Analytics (ADA)](#-advanced-data-analytics-ada)
+- [Business Reports](#-business-reports)
+- [Power BI Dashboard](#-power-bi-dashboard)
+- [Results & Recommendations](#-results--recommendations)
+- [Key Insights](#-key-insights)
+
+---
+
 ## 🔗 End-to-End Project Series
 
 This project is part of a three-part data pipeline I built from scratch:
@@ -54,6 +71,15 @@ The executive team lacked clear visibility into customer purchasing behaviors an
 
 ```
 sql-data-analytics/
+│
+├── data/
+│   ├── gold_layer/                        Analytics
+│   │   ├── gold_dim_customers.csv
+│   │   ├── gold_dim_products.csv
+│   │   └── gold_fact_sales.csv
+│   └── report_layer/                      Power BI Dashboard
+│       ├── gold.report_customers.csv     
+│       └── gold.report_products.csv      
 │
 ├── docs/
 │   └── analytics_roadmap.png
